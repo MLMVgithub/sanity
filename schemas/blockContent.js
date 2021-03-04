@@ -56,7 +56,18 @@ export default {
     // as a block type.
     {
       type: 'image',
-      options: { hotspot: true }
-    }
+      options: { hotspot: true },
+      fields: [
+        {
+          name: 'alt',
+          title: 'Alternative Text',
+          type: 'string',
+          description: 'Important for SEO and accessibility (required)',
+          options: {
+            isHighlighted: true // <-- make this field easily accessible
+          }
+        }
+      ]
+    },
   ]
 }
